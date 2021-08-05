@@ -53,6 +53,8 @@ function buildUsers(user) {
   const edit = document.createElement("span");
   edit.classList.add("me-5");
   edit.innerText = "Edit";
+  edit.setAttribute("data-bs-toggle", "modal");
+  edit.setAttribute("data-bs-target", "#kt_modal_add_user");
   finalTd.appendChild(edit);
   const del = document.createElement("span");
   del.classList.add("ms-5");
@@ -63,6 +65,13 @@ function buildUsers(user) {
   parent.appendChild(mainDiv);
 
   del.addEventListener("click", deleteData);
+  edit.addEventListener("click", editInfo);
+  function editInfo(e) {
+    const nameValue = document.getElementById("name_input");
+    const emailValue = document.getElementById("email_input");
+    emailValue.value = email.innerText;
+    nameValue.value = name.innerText;
+  }
 }
 
 async function createUser(e) {
