@@ -732,7 +732,6 @@
                   id="kt_modal_add_user"
                   tabindex="-1"
                   aria-hidden="true"
-                  
                 >
                   <!--begin::Modal dialog-->
                   <div class="modal-dialog modal-dialog-centered mw-650px">
@@ -746,7 +745,8 @@
                         <!--begin::Close-->
                         <div
                           class="btn btn-icon btn-sm btn-active-icon-primary"
-                          data-bs-dismiss="modal" aria-label="Close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
                         >
                           <!--begin::Svg Icon | path: icons/duotone/Interface/Close-Square.svg-->
                           <span class="svg-icon svg-icon-2x">
@@ -778,10 +778,10 @@
                       </div>
                       <!--end::Modal header-->
                       <!--begin::Modal body-->
-                      <div class="modal-body scroll-y mx-2  my-5">
+                      <div class="modal-body scroll-y mx-2 my-5">
                         <!--begin::Form-->
                         <form
-                        onsubmit="createUser(event)"
+                          onsubmit="createUser(event)"
                           id="kt_modal_add_user_form"
                           class="
                             form
@@ -790,19 +790,14 @@
                           action="#"
                         >
                           <
-                          <div
-                            class="d-flex flex-column scroll-y "
-                            
-                          >
-                            
+                          <div class="d-flex flex-column scroll-y">
                             <div class="fv-row mb-7 fv-plugins-icon-container">
-                              
                               <label class="required fw-bold fs-6 mb-2"
                                 >Full Name</label
                               >
                               >
                               <input
-                              onchange="onUserDataChange(event)"
+                                onchange="onUserDataChange(event)"
                                 type="text"
                                 name="name"
                                 class="
@@ -810,9 +805,8 @@
                                   mb-3 mb-lg-0
                                 "
                                 placeholder="Full name"
-                                
                               />
-                              
+
                               <div
                                 class="
                                   fv-plugins-message-container
@@ -820,15 +814,14 @@
                                 "
                               ></div>
                             </div>
-                            
+
                             <div class="fv-row mb-7 fv-plugins-icon-container">
-                             
                               <label class="required fw-bold fs-6 mb-2"
                                 >Email</label
                               >
-                              
+
                               <input
-                              onchange="onUserDataChange(event)"
+                                onchange="onUserDataChange(event)"
                                 type="email"
                                 name="email"
                                 class="
@@ -836,9 +829,8 @@
                                   mb-3 mb-lg-0
                                 "
                                 placeholder="example@domain.com"
-                                
                               />
-                              
+
                               <div
                                 class="
                                   fv-plugins-message-container
@@ -846,15 +838,13 @@
                                 "
                               ></div>
                             </div>
-                            
+
                             <div class="mb-7">
-                              
                               <label class="required fw-bold fs-6 mb-5"
                                 >Role</label
                               >
-                              
+
                               <div class="d-flex fv-row">
-                                
                                 <div
                                   class="
                                     form-check
@@ -864,7 +854,7 @@
                                 >
                                   <!--begin::Input-->
                                   <input
-                                  onchange="onUserDataChange(event)"
+                                    onchange="onUserDataChange(event)"
                                     class="form-check-input me-3"
                                     name="role"
                                     type="radio"
@@ -906,7 +896,7 @@
                                 >
                                   <!--begin::Input-->
                                   <input
-                                  onchange="onUserDataChange(event)"
+                                    onchange="onUserDataChange(event)"
                                     class="form-check-input me-3"
                                     name="role"
                                     type="radio"
@@ -947,7 +937,7 @@
                                 >
                                   <!--begin::Input-->
                                   <input
-                                  onchange="onUserDataChange(event)"
+                                    onchange="onUserDataChange(event)"
                                     class="form-check-input me-3"
                                     name="role"
                                     type="radio"
@@ -989,7 +979,7 @@
                                 >
                                   <!--begin::Input-->
                                   <input
-                                  onchange="onUserDataChange(event)"
+                                    onchange="onUserDataChange(event)"
                                     class="form-check-input me-3"
                                     name="role"
                                     type="radio"
@@ -1030,7 +1020,7 @@
                                 >
                                   <!--begin::Input-->
                                   <input
-                                  onchange="onUserDataChange(event)"
+                                    onchange="onUserDataChange(event)"
                                     class="form-check-input me-3"
                                     name="role"
                                     type="radio"
@@ -1071,22 +1061,8 @@
                             >
                               Discard
                             </button>
-                            <button
-                              type="submit"
-                              class="btn btn-primary"
-                              
-                            >
+                            <button type="submit" class="btn btn-primary">
                               <span class="indicator-label">Submit</span>
-                              <span class="indicator-progress"
-                                >Please wait...
-                                <span
-                                  class="
-                                    spinner-border spinner-border-sm
-                                    align-middle
-                                    ms-2
-                                  "
-                                ></span
-                              ></span>
                             </button>
                           </div>
                           <!--end::Actions-->
@@ -1190,7 +1166,7 @@
                         >
                           Role
                         </th>
-                        
+
                         <th
                           class="min-w-125px sorting"
                           tabindex="0"
@@ -1248,16 +1224,12 @@
 
                         <td>Administrator</td>
 
-                        
-
-                        
-
                         <td data-order="2021-06-20T10:30:00+03:00">
                           20 Jun 2021, 10:30 am
                         </td>
                         <td>
-                            <span class="me-5">Edit</span>
-                            <span class="ms-5">Delete</span>
+                          <span class="me-5">Edit</span>
+                          <span class="ms-5">Delete</span>
                         </td>
                       </tr>
                     </tbody>
@@ -1275,7 +1247,7 @@
         </div>
         <!--end::Post-->
       </div>
-      <script src="/script.js"></script>
+      <script src="./script.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

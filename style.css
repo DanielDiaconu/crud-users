@@ -27419,6 +27419,7 @@ a:hover {
     box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
     z-index: 105;
 }
+
 .menu-sub-dropdown.menu.show,
 .menu-sub-dropdown.show[data-popper-placement],
 .show.menu-dropdown > .menu-sub-dropdown {
@@ -43769,4 +43770,8 @@ body {
 }
 .docs-aside-menu .menu-item .menu-icon {
     justify-content: flex-start;
+}
+
+.delete-btn{
+ cursor: pointer;
 }
