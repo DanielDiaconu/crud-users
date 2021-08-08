@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "name": "Barbu Marean Bogdan",
-      "email": "bogdan_ace_cf@yahoo.com",
-      "role": "Developer",
-      "id": 1
+      "name": "sadasdasda",
+      "email": "mihai@test.gmail.codasdam",
+      "role": "Administrator",
+      "id": 2
     },
     {
-      "name": "Daniel Diaconu",
-      "email": "blackstar09lol@gmail.com",
-      "role": "Trial",
-      "id": 2
+      "role": "Analyst",
+      "id": 4,
+      "name": "daniel",
+      "email": "blackstar09lol@gmail.com"
     }
   ]
 }
